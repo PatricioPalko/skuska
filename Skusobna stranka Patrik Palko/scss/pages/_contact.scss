@@ -1,0 +1,107 @@
+.menu {
+	display: block;
+	margin: 0 auto;
+}
+
+.section-2 {
+	@include container(em(800));
+}
+
+.address .container {
+	@include container(em(700));
+	padding: em(50);
+}
+
+.kontakt .row {
+	@include container(em(800));
+	 > .column {
+  		padding: em(8) em(8);
+	}
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.kontakt .column {
+  float: left;
+  width: 50%;
+}
+
+.white-box {
+    position: relative;
+    background-color: $color-bg;
+    padding: em(32) em(40) em(30);
+    z-index: 5;
+    .fa {
+    	position: relative;
+    }
+    .image {
+    	display: inline-block;
+    	font-size: em(30);
+    	color: rgba(0,0,0, 0.5);
+    	margin: 0 auto;
+    	text-align: center;
+    }
+    a,p, address {
+    	font-style: normal;
+    }
+    a:hover,
+    h2:hover {
+    	color: $color-main;
+    }
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+button,
+textarea {
+	font: $font-family;
+	background: rgba($color-main, 0.5);
+	border: none;
+	width: em(300);
+	padding: em(15) em(20);
+	margin: em(15);
+	border-radius: em(4);
+	box-shadow: 0 0 em(3) rgba(0, 0, 0, 0.12);
+	color: $color-text;
+}
+
+textarea {
+	width: em(635);
+}
+
+button {
+	text-transform: uppercase;
+	display: block;
+	color: $color-bg;
+	background: $color-main;
+	text-decoration: none;
+	padding: em(6) em(20);
+	border-radius: em(4);
+	text-align: center;
+	margin: em(20) auto;
+}
+
+button:hover {
+	background: rgba($color-main, 0.9);
+	color: $color-bg;
+}
+
+input:focus,
+textarea:focus {
+	outline: em(2) solid $color-main;
+}
+
+@media (max-width: 678px) {
+	textarea {
+	@include container(em(300));
+	display: block;
+	}
+	.kontakt .column {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}

@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    color: $color-main;
+    margin-bottom: em(20);
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+
+.row > .column {
+  padding: em(8);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33333%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: em(100);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: em(10);
+  right: em(25);
+  font-size: em(35);
+  font-weight: bold;
+  :hover,
+  :focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: em(16);
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: em(20);
+  transition: 0.6s ease;
+  border-radius: 0 em(3) em(3) 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: em(3) 0 0 em(3);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: em(12);
+  padding: em(8) em(12);
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+  width:100%;
+}
+
+.column {
+    img:hover {
+    opacity: 0.8;
+  }
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: em(2) em(16);
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 em(4) em(8) 0 rgba(0, 0, 0, 0.2), 0 em(6) em(20) 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 786px) {
+  .column {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+  img{
+      margin: 0 auto;
+      display: block;
+      width: 70%;
+  }
+  }
+}

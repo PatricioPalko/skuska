@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Skuska</title>
+  <meta name="description" content="skuska">
+  <meta name="author" content="Patrik Palko">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="js/modernizr.custom.72111.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body class="galerie">
+
+  <header class="site-header">
+  	<div class="container">
+  		<a href="index.html" class="logo">Lorem Ipsum</a>
+      <nav>
+    		<ul class="menu">
+    			<li><a href="index.html">Úvodní stránka</a></li>
+    			<li class="active"><a href="gallery.html">Galérie</a></li>
+    			<li><a href="contact.html">Kontakt</a></li>
+    		</ul>
+    	</nav>
+    </div>
+  </header>
+
+	<main>
+
+		<div class="container">
+			<h1>Lorem</h1>
+		</div>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/adventure/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor lazy" alt="">
+      </div>
+      <div class="column">
+        <img src="img/adventure/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor lazy" alt="">
+      </div>
+      <div class="column">
+        <img src="img/adventure/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor lazy" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/adventure/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor lazy" alt="">
+      </div>
+      <div class="column">
+        <img src="img/adventure/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor lazy" alt="">
+      </div>
+      <div class="column">
+        <img src="img/adventure/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor lazy" alt="">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="img/adventure/1.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="img/adventure/2.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="img/adventure/3.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img/adventure/4.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img/adventure/4.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="img/adventure/5.jpg" class="lazy" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="img/adventure/6.jpg" class="lazy" alt="">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/1.jpg" onclick="currentSlide(1)" alt="Morocco">
+        </div>
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/2.jpg" onclick="currentSlide(2)" alt="Gibraltar">
+        </div>
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/3.jpg" onclick="currentSlide(3)" alt="Monkey">
+        </div>
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/4.jpg" onclick="currentSlide(4)" alt="Sidi Bou Said bar">
+        </div>
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/5.jpg" onclick="currentSlide(5)" alt="Tunisian Spa">
+        </div>
+        <div class="column">
+          <img class="demo cursor lazy" src="img/adventure/6.jpg" onclick="currentSlide(6)" alt="Sidi Bou Said">
+        </div>
+      </div>
+    </div>
+</main>
+	<aside class="pre-footer">
+			<div class="container">
+				<p>
+					<strong>Lorem Ipsum is simply dummy text?</strong>
+					Lorem Ipsum
+				</p>
+				<ul class="menu personal">
+					<li><i class="fa fa-phone"></i><a href="tel:+421900111222">+421 900 111 222</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:patrik.palko.ke@gmail.com">Patrik.Palko.ke@gmail.com</a></li>
+				</ul>
+			</div>
+	</aside>
+
+  <footer>
+		<div class="container">
+			<p class="author">
+				Navrh a design pripravil Patrik Palko
+			</p>
+			<nav>
+  			<ul class="menu">
+      		<li><a href="index.html">Úvodní stránka</a></li>
+      		<li class="active"><a href="gallery.html">Galérie</a></li>
+      		<li><a href="contact.html">Kontakt</a></li>
+  			</ul>
+      </nav>
+	   </div>
+	</footer>
+
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<script src="../dist/lazyload.min.js"></script>
+  <script>
+    (function () {
+      function logElementEvent(eventName, element) {
+        console.log(Date.now(), eventName, element.getAttribute("data-src"));
+      }
+      ll = new LazyLoad({
+        elements_selector: '.lazy',
+        load_delay: 1000,
+        threshold: 0,
+        callback_enter: function (element) {
+          logElementEvent("ENTERED", element);
+        },
+        callback_load: function (element) {
+          logElementEvent("LOADED", element);
+        },
+        callback_set: function (element) {
+          logElementEvent("SET", element);
+        },
+        callback_error: function (element) {
+          logElementEvent("ERROR", element);
+          element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Fallback%20image&w=220&h=280";
+        }
+      });
+    }());
+  </script>
+
+</body>
+</html>

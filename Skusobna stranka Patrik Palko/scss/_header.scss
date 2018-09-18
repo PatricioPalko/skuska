@@ -1,0 +1,32 @@
+nav {
+	a {
+		color: $color-text;
+		font-size: em(16);
+		padding: em(24,16) em(8,16);
+		margin-right: em(30,20);
+			&:hover,
+			&:focus {
+				color: $color-main;
+			}
+	}
+}
+
+.logo {
+	position: absolute;
+    top: em(25);
+    left: em(25);
+    width: em(39);
+    height: em(39);
+
+    display: block;
+    z-index: 999;
+}
+
+.menu {
+	text-align: right;
+	margin-right: em(100);
+}
+
+.active a {
+	color: $color-main;
+}

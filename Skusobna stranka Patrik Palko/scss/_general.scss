@@ -1,0 +1,64 @@
+//* {
+//	outline: 3px solid black;
+//}*
+html {
+	@include box-sizing( border-box );
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+
+@include selection {
+	background-color: rgba(0,0,0, 0.2);
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	*zoom: 1;
+}
+
+body {
+	color: $color-text;
+	background: $color-bg;
+	font: {
+		size: $font-size-base;
+		family: $font-family;
+		weight: normal;
+	}
+	text-align: center;
+	margin: 0;
+}
+
+.container {
+	@include container (em(1920));
+}
+
+a {
+	color: $color-text;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.menu {
+	margin: 0;
+	list-style: none;
+	li, a {
+		display: inline-block;
+		//float: right;
+	}
+}
